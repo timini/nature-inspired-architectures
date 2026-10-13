@@ -1,0 +1,13 @@
+flowchart LR
+  subgraph N[Biological motif under suitable kinetics]
+    X[Input regulator] --> AND[AND-like target activation]
+    X --> Y[Slower intermediate regulator]
+    Y --> AND
+  end
+  subgraph S[Software translation]
+    Signal[Current signal] --> Gate[AND gate]
+    Signal --> Counter[Consecutive high counter]
+    Counter -->|Threshold reached| Gate
+    Gate --> Out[Activation]
+  end
+  Y -. Approximation .-> Counter

@@ -1,0 +1,12 @@
+flowchart LR
+  subgraph N[Biological organisation]
+    N1[Diverse nutrients] --> N2[Shared metabolic core]
+    N2 --> N3[Diverse products]
+  end
+  subgraph S[Software translation]
+    C[Celsius adapter] --> E[Temperature v1]
+    F[Fahrenheit adapter] --> E
+    E --> A[Alert consumer]
+    E --> D[Display consumer]
+  end
+  N2 -. Analogy .-> E

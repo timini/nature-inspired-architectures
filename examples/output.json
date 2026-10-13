@@ -1,0 +1,160 @@
+{
+  "compartments": {
+    "billing": [
+      "INVOICE"
+    ],
+    "analytics": [
+      "REPORT"
+    ],
+    "failed": [
+      "bad"
+    ],
+    "overload_rejections": 1
+  },
+  "bow_tie": {
+    "alerts": [
+      {
+        "sensor": "rack-a",
+        "overheating": true
+      },
+      {
+        "sensor": "rack-b",
+        "overheating": true
+      }
+    ],
+    "display": [
+      "rack-a: 35.0 C",
+      "rack-b: 35.0 C"
+    ]
+  },
+  "feedback": {
+    "target_utilisation": 0.7,
+    "samples": [
+      {
+        "tick": 0,
+        "demand": 3.0,
+        "capacity": 6.0,
+        "utilisation": 0.5
+      },
+      {
+        "tick": 59,
+        "demand": 3.0,
+        "capacity": 4.2857,
+        "utilisation": 0.7
+      },
+      {
+        "tick": 60,
+        "demand": 7.0,
+        "capacity": 4.2857,
+        "utilisation": 1.6333
+      },
+      {
+        "tick": 100,
+        "demand": 7.0,
+        "capacity": 9.9932,
+        "utilisation": 0.7005
+      },
+      {
+        "tick": 239,
+        "demand": 7.0,
+        "capacity": 10.0,
+        "utilisation": 0.7
+      }
+    ]
+  },
+  "persistence": {
+    "input": [
+      false,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "output": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  "development": {
+    "preview-v1": [
+      {
+        "text": "small",
+        "words": null
+      },
+      {
+        "text": "a longer document",
+        "words": null
+      }
+    ],
+    "index-v1": [
+      {
+        "text": "a longer document",
+        "words": 3
+      },
+      {
+        "text": "small",
+        "words": 1
+      }
+    ]
+  },
+  "degeneracy": {
+    "normal": {
+      "solver": "weighted_route",
+      "path": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "cost": 3
+    },
+    "degraded": {
+      "solver": "fewest_hops",
+      "path": [
+        "a",
+        "d"
+      ],
+      "cost": 10
+    }
+  },
+  "swarm": {
+    "scarce": {
+      "launches": 305,
+      "successes": 16,
+      "peak_busy": 10
+    },
+    "abundant": {
+      "launches": 1267,
+      "successes": 1259,
+      "peak_busy": 9
+    },
+    "no_success": {
+      "launches": 288,
+      "successes": 0,
+      "peak_busy": 10
+    }
+  },
+  "quorum": {
+    "sparse": {
+      "active_nodes": 1,
+      "mean_signal": 0.417
+    },
+    "dense": {
+      "active_nodes": 12,
+      "mean_signal": 4.999
+    },
+    "departed": {
+      "active_nodes": 0,
+      "mean_signal": 0.001
+    }
+  }
+}

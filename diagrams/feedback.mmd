@@ -1,0 +1,14 @@
+flowchart LR
+  subgraph N[Biological organisation]
+    Stim[Stimulus] --> Act[Signalling activity]
+    Act --> Adapt[Adaptation feedback]
+    Adapt --> Act
+  end
+  subgraph S[Software translation]
+    Demand[Demand disturbance] --> Plant[Service]
+    Plant --> U[Measured utilisation]
+    U --> Error[Subtract target]
+    Error --> Int[Integral state with bounds]
+    Int -->|Capacity| Plant
+  end
+  Adapt -. Analogy .-> Int

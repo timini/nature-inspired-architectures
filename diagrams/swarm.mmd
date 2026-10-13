@@ -1,0 +1,16 @@
+flowchart LR
+  subgraph N[Biological organisation]
+    Return[Successful returning forager] --> Encounter[Brief local encounter]
+    Encounter --> Leave[Departure propensity]
+    Leave --> Search[Foraging]
+    Search --> Return
+  end
+  subgraph S[Software translation]
+    Success[Worker success] --> Contact[Neighbour contact]
+    Contact --> Signal[Local decaying signal]
+    Signal --> Decision[Probabilistic launch]
+    Explore[Baseline exploration] --> Decision
+    Decision --> Work[Bounded worker trip]
+    Work --> Success
+  end
+  Encounter -. Analogy .-> Contact

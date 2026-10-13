@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph N[Biological organisation]
+    A[Functional module A] <-->|Limited coupling| B[Functional module B]
+  end
+  subgraph S[Software translation]
+    I[Incoming jobs] --> Q1[Bounded billing mailbox]
+    I --> Q2[Bounded analytics mailbox]
+    Q1 --> W1[Billing budget and handler]
+    Q2 --> W2[Analytics budget and handler]
+    Q2 -->|Full| R[Explicit rejection]
+    W2 -->|Expected failure| F[Local failure record]
+  end
+  A -. Analogy .-> Q1
+  B -. Analogy .-> Q2

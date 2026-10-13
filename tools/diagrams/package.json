@@ -1,0 +1,7 @@
+{
+  "name": "nature-architecture-diagrams",
+  "private": true,
+  "description": "Optional tooling to render the catalogue diagrams",
+  "engines": { "node": ">=22" },
+  "devDependencies": { "@mermaid-js/mermaid-cli": "11.17.0" }
+}

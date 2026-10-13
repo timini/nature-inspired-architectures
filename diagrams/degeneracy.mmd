@@ -1,0 +1,14 @@
+flowchart LR
+  subgraph N[Biological organisation]
+    E1[Structure A] --> F[Overlapping function]
+    E2[Structure B] --> F
+    E2 --> Other[Other capability]
+  end
+  subgraph S[Software translation]
+    Request[Route request] --> Primary[Weighted solver]
+    Primary -->|Unavailable or invalid| Fallback[Fewest-hop solver]
+    Primary --> Check[Validate shared contract]
+    Fallback --> Check
+    Check --> Result[Route plus quality metadata]
+  end
+  F -. Analogy .-> Check

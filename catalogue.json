@@ -1,0 +1,100 @@
+[
+  {
+    "id": "compartments",
+    "title": "Bounded compartments",
+    "scale": "Molecular modules, cells and ecological networks",
+    "document": "patterns/01-compartments.md",
+    "implementation": "natural_architectures/compartments.py",
+    "diagram": "diagrams/compartments.mmd",
+    "references": [
+      "simon1962",
+      "hartwell1999",
+      "stouffer2011",
+      "kitano2004"
+    ]
+  },
+  {
+    "id": "bow_tie",
+    "title": "Bow-tie canonical core",
+    "scale": "Cellular metabolism and information flow",
+    "document": "patterns/02-bow-tie.md",
+    "implementation": "natural_architectures/bow_tie.py",
+    "diagram": "diagrams/bow_tie.mmd",
+    "references": [
+      "csete2004",
+      "csete2002"
+    ]
+  },
+  {
+    "id": "feedback",
+    "title": "Integral feedback regulation",
+    "scale": "Cellular signalling and physiological control",
+    "document": "patterns/03-feedback.md",
+    "implementation": "natural_architectures/feedback.py",
+    "diagram": "diagrams/feedback.mmd",
+    "references": [
+      "yi2000",
+      "kitano2004"
+    ]
+  },
+  {
+    "id": "persistence",
+    "title": "Coherent feed-forward persistence filter",
+    "scale": "Molecular gene-regulatory networks",
+    "document": "patterns/04-persistence.md",
+    "implementation": "natural_architectures/persistence.py",
+    "diagram": "diagrams/persistence.mmd",
+    "references": [
+      "alon2007"
+    ]
+  },
+  {
+    "id": "development",
+    "title": "Conserved capabilities with changeable regulation",
+    "scale": "Organism development and evolutionary change",
+    "document": "patterns/05-development.md",
+    "implementation": "natural_architectures/development.py",
+    "diagram": "diagrams/development.mmd",
+    "references": [
+      "gerhart2007",
+      "kashtan2005"
+    ]
+  },
+  {
+    "id": "degeneracy",
+    "title": "Diverse implementations with an overlapping contract",
+    "scale": "Molecular, cellular and organism functions",
+    "document": "patterns/06-degeneracy.md",
+    "implementation": "natural_architectures/degeneracy.py",
+    "diagram": "diagrams/degeneracy.mmd",
+    "references": [
+      "edelman2001",
+      "kitano2004"
+    ]
+  },
+  {
+    "id": "swarm",
+    "title": "Local success feedback for worker activation",
+    "scale": "Colonies and collective behaviour",
+    "document": "patterns/07-swarm.md",
+    "implementation": "natural_architectures/swarm.py",
+    "diagram": "diagrams/swarm.mmd",
+    "references": [
+      "prabhakar2012",
+      "gordon2016",
+      "abelson2000"
+    ]
+  },
+  {
+    "id": "quorum",
+    "title": "Local quorum signalling with decay",
+    "scale": "Bacterial populations and collective regulation",
+    "document": "patterns/08-quorum.md",
+    "implementation": "natural_architectures/quorum.py",
+    "diagram": "diagrams/quorum.mmd",
+    "references": [
+      "waters2005",
+      "abelson2000"
+    ]
+  }
+]

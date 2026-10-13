@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph N[Biological organisation]
+    R[Regulation] --> Core[Conserved core processes]
+    Core --> T1[Trait configuration A]
+    Core --> T2[Trait configuration B]
+  end
+  subgraph S[Software translation]
+    P1[Preview recipe v1] --> Registry[Shared capability registry]
+    P2[Index recipe v1] --> Registry
+    Registry --> Clean[Normalise and filter]
+    Registry --> Count[Count and sort]
+  end
+  R -. Analogy .-> P1
+  Core -. Analogy .-> Registry

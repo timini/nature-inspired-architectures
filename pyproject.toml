@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nature-inspired-architectures"
+version = "0.1.0"
+description = "Research-backed biological architecture patterns with executable software examples"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+nature-patterns = "natural_architectures.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["natural_architectures*"]

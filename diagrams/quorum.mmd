@@ -1,0 +1,15 @@
+flowchart LR
+  subgraph N[Biological organisation]
+    Cells[Signal-producing cells] --> Molecules[Local concentration]
+    Molecules --> Response[Regulated response]
+    Molecules --> Loss[Transport and loss]
+  end
+  subgraph S[Software translation]
+    A[Node A signal] <--> B[Node B signal]
+    B <--> C[Node C signal]
+    C <--> A
+    B --> Gate[Local hysteresis gate]
+    Decay[Decay each tick] --> B
+    Gate --> Activity[Optional activity]
+  end
+  Molecules -. Analogy .-> B
