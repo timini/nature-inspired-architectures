@@ -2,6 +2,8 @@
 
 An evidence-linked catalogue of biological organisation translated into software design patterns, with diagrams, small Python implementations and example use cases.
 
+![Integral feedback pattern: capacity tracks a utilisation target](diagrams/feedback.svg)
+
 The starting question: **What architectures has evolution produced for coordinating complexity at molecular, cellular, organism and population scales—and which mechanisms are useful in software?**
 
 The catalogue separates biological observations, explanations for how they evolved, and engineering hypotheses. A useful analogy is a starting point for a test, not evidence that a software design is optimal. See the [research map](docs/research-map.md) and [methodology](docs/methodology.md).
