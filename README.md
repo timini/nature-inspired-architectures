@@ -2,6 +2,8 @@
 
 An evidence-linked catalogue of biological organisation translated into software design patterns, with diagrams, small Python implementations and example use cases.
 
+Read it as a website: <https://timini.github.io/nature-inspired-architectures/>
+
 ![Integral feedback pattern: capacity tracks a utilisation target](diagrams/feedback.svg)
 
 The starting question: **What architectures has evolution produced for coordinating complexity at molecular, cellular, organism and population scales—and which mechanisms are useful in software?**
