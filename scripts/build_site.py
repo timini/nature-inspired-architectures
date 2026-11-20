@@ -104,6 +104,7 @@ def render(source: str, page: str) -> None:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(title)}</title>
 <style>{STYLE}</style>
+<script defer src="{relative('analytics.js', page)}" data-measurement-id="G-E7HR0ZB5K7"></script>
 </head>
 <body>
 <header class="site">
@@ -133,6 +134,7 @@ def main() -> None:
         else:
             dst.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(src, dst)
+    shutil.copy2(ROOT / "scripts/analytics.js", OUT / "analytics.js")
     print(f"Built {len(PAGES)} pages in {OUT.relative_to(ROOT)}")
 
 
